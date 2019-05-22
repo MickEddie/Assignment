@@ -1,4 +1,4 @@
-1. Get the least number
+1. Get the least number.
 
 2. Compare the first number with second and third number, and store the least.
 
