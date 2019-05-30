@@ -6,7 +6,7 @@ public class AccountTest {
     public static void main(String[] args) {
     Account111 account1 = new Account111("Jane Green", 50.00);
     Account111 account2 = new Account111("John Blue", -7.53);
-
+    
     // display initial balance of each object
     System.out.printf("%s balance: $%.2f%n", account1.getName(), account1.getBalance());
     System.out.printf("%s balance: $%.2f%n%n", account2.getName(), account2.getBalance());
@@ -33,9 +33,10 @@ public class AccountTest {
     System.out.printf("%s balance: $%.2f%n%n",
     account2.getName(), account2.getBalance());
     
-    System.out.println("Enter withdrawal amount: "); // prompt
+    System.out.println("Enter withdrawal amount for John's account: "); // prompt
     double withdrawalAmt = input.nextDouble(); // obtain user input
-    Account111 mike = new Account111();
+
+    Account111 mike = new Account111("John", 200);
     System.out.println(mike.withdraw(withdrawalAmt));
 }
 }

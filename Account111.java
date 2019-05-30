@@ -15,7 +15,7 @@ public class Account111 {
         return balance;
 }
 // Account constructor that receives two parameters
-    public Account111() {
+    public Account111(String name, double balance) {
     this.name = name; // assign name to instance variable name
 
     // validate that the balance is greater than 0.0; if it's not,
