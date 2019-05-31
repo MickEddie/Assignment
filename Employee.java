@@ -5,6 +5,7 @@ public class Employee {
     String firstName;
     String lastName;
     double monthlySalary;
+    double mthSalary;
     double yearlySalary;
 
     public Employee(String firstNAme, String lastName, double monthlySalary) {
@@ -34,12 +35,15 @@ public class Employee {
 
      public double getYearlySalary() {
         if(monthlySalary < 0) {
-            System.out.println("INVALID");
+            System.out.println("SALARY IS INVALID");
         }
-         return monthlySalary * 12;
+        else {
+            mthSalary = monthlySalary;
+        }
+         return mthSalary * 12;
      }
      public double raiseSalary() {
-         return (monthlySalary * 1.1)*12;
+         return (mthSalary * 1.1)*12;
      }
 
 }
